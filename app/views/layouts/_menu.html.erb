@@ -1,0 +1,40 @@
+<div class="container bg-white">
+  <div class="row">
+<h1 class="float-start" id="site-name">Blog App</h1>
+
+  <header class="s-header">
+    <div class="column">
+      <div class="s-header__content column">
+          <h1 class="s-header__logotext">
+          <a class="current"><%= link_to "Blog It",posts_path %></a>
+          </h1>
+          <p class="s-header__tagline">Your thoughts into words.</p>
+      </div>
+    </div> <!-- end row -->
+
+     <nav class="s-header__nav-wrap">
+       <div class="row">
+        <ul class="s-header__nav">
+          <li class="current"><%= link_to "Home",posts_path %></li>
+            <li class="has-children"><a href="#0">Dropdown</a>
+              <ul>
+                <li><a href="#0">History</a></li>
+                <li><a href="#0">Present</a></li>
+                <li><a href="#0">Future</a></li>
+            </ul>
+            </li>
+             <li><%= link_to"About",posts_path %></li>
+          <li><%= link_to "Contact",posts_path %></li>
+            <li class="has-children"><a href="#0">Blog</a>
+              <ul>
+                <li><a href="blog.html">Blog Entries</a></li>
+                  <li><%= link_to "Blog",posts_path %></li>
+              </ul>
+            </li>
+        </ul> <!-- end #nav -->
+     </div>
+    </nav> <!-- end #nav-wrap -->
+
+  </header> <!-- Header End -->
+  </div>
+</div>
